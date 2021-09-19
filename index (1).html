@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .landing-div{
+            width: 100% !important;
+            min-height: 100vh !important;
+            height: fit-content !important;
+            display: flex !important;
+            justify-content: center !important; 
+            align-items: center !important;
+        }
+        .box{
+            width: 33% !important;
+            height: 600px !important;
+            background-color:#FF914D !important;
+            margin: 1em !important;
+            padding: 1em !important;
+            float: left;
+        }
+        .inner-box-div{
+            display: flex;
+            margin-bottom: 0.5em;
+        }
+        .box-1{
+            width: 300px;
+            height:300px;
+            background-color: #5CE1E6 !important;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+        .box-21{
+            width:100% !important;
+            height:300px !important;
+            background-color: #5CE1E6 !important;
+            margin-bottom: 0.5em;
+        }
+        .box-22{
+            width:100% !important;
+            height:300px !important;
+            background-color: #5CE1E6 !important;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        .box-31{
+            width:100%;
+            height:300px;
+            background-color:#5CE1E6 !important;
+        }
+        .box-32{
+            width:100%;
+            height:300px;
+            background-color:#5CE1E6 !important;
+            margin-top: 0.5em;
+            display: grid;
+            place-items: center;
+        }
+        @media (min-width: 768px) {
+            .landing-div{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-div">
+        <div class="box">
+            <div class="inner-box-div">
+                <div class="box-1">
+                    
+                </div>
+                <div class="box-1">
+                    
+                </div>            
+            </div>
+            <div class="inner-box-div">
+                <div class="box-1">
+                    
+                </div>
+                <div class="box-1">
+                    
+                </div>            
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-21"></div>
+            <div class="box-22"></div>
+        </div>
+        <div class="box" style="display: grid; place-items: center;">
+            <div class="box-31">
+                <img width="100%" height="100%" alt="..." src="https://images.unsplash.com/photo-1628191010210-a59de33e5941?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
+            </div>
+            <div class="box-32">
+                <input type="text" name="username" style="width:90% !important" placeholder="username"/>
+                <input type="password" name="password" style="width:90% !important" placeholder="password"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
